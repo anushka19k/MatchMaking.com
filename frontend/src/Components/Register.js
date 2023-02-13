@@ -121,7 +121,7 @@ function Register() {
       setPhoneNumber("");
       setEmail("");
       setPassword("");
-      navigate("/");
+      navigate("/singles");
     } else {
       alert("Please fill all details to proceed.");
     }

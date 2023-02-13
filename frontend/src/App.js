@@ -6,6 +6,8 @@ import Joining from "./Components/Joining";
 import SuccessStories from "./Components/SuccessStories";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./Components/Register";
+import ErrorPage from "./Components/ErrorPage";
+import SingleProfiles from "./Components/SingleProfiles";
 
 function App() {
   return (
@@ -29,7 +31,26 @@ function App() {
             element={
               <div>
                 <NavBar />
-                <Register/>
+                <Register />
+              </div>
+            }
+          />
+
+          <Route
+            path={"/notavailable"}
+            element={
+              <div>
+                <ErrorPage />
+              </div>
+            }
+          />
+
+          <Route
+            path={"/singles"}
+            element={
+              <div>
+                <NavBar/>
+                <SingleProfiles/>
               </div>
             }
           />

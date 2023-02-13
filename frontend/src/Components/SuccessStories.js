@@ -2,8 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
-import KiaraSid from "../Images/kiara-sid.jpg";
+import Photo1 from "../Images/photo1.jpg";
+import Photo2 from "../Images/photo2.jpg";
+import Photo3 from "../Images/photo3.jpg";
+import { Link } from "react-router-dom";
 
 function SuccessStories() {
 
@@ -15,9 +17,9 @@ function SuccessStories() {
       <Row xs={1} md={3} >
         <Col className="SuccessStoriesCol">
           <Card className="SuccessCards" bg="dark">
-            <Card.Img variant="top" src={KiaraSid} />
+            <Card.Img variant="top" src={Photo1} />
             <Card.Body>
-            <Card.Title>Kiara & Sidharth</Card.Title>
+            <Card.Title>Sangeeta & Shreyas</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -27,9 +29,9 @@ function SuccessStories() {
         </Col>
         <Col className="SuccessStoriesCol" >
           <Card className="SuccessCards" bg="dark">
-            <Card.Img variant="top" src={KiaraSid} />
+            <Card.Img variant="top" src={Photo2} />
             <Card.Body>
-              <Card.Title>Kiara & Sidharth</Card.Title>
+              <Card.Title>Anamika & Rajesh</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -39,9 +41,9 @@ function SuccessStories() {
         </Col>
         <Col className="SuccessStoriesCol">
           <Card className="SuccessCards" bg="dark">
-            <Card.Img variant="top" src={KiaraSid} />
+            <Card.Img variant="top" src={Photo3} />
             <Card.Body>
-            <Card.Title>Kiara & Sidharth</Card.Title>
+            <Card.Title>Sachin & Jyoti</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -53,7 +55,7 @@ function SuccessStories() {
     </div>
 
     <div className="yourStory">
-      <h1>Your story is waiting to happen!</h1><button onClick={""} className="storyBtn">Get Started</button>
+      <h1>Your story is waiting to happen!</h1><Link to={"/login"}><button className="storyBtn">Get Started</button></Link>
     </div>
     </div>
   );
